@@ -2,9 +2,6 @@
 🌊 Flood Data Collecting & Rescue-Aided LoRaWAN System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
-[![Issues](https://img.shields.io/github/issues/yourusername/flood-lorawan)](https://github.com/yourusername/flood-lorawan/issues)  
-[![Forks](https://img.shields.io/github/forks/yourusername/flood-lorawan)](https://github.com/yourusername/flood-lorawan/network)  
-[![Stars](https://img.shields.io/github/stars/yourusername/flood-lorawan)](https://github.com/yourusername/flood-lorawan/stargazers)
 
 ---
 
