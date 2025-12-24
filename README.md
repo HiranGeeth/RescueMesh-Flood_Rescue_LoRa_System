@@ -84,6 +84,6 @@ The firmware is modular and structured, supporting **incremental testing** from 
 ## Getting Started
 1. **Clone the Repository**
    ```bash
-
+git clone https://github.com/HiranGeeth/RescueMesh-Flood_Rescue_LoRa_System.git
    cd flood-lorawan
 
