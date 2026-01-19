@@ -3,7 +3,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
 
----
 
 ## Overview
 This project implements a **low-power, long-range LoRaWAN system** for flood data collection and emergency rescue notifications.  
@@ -11,7 +10,6 @@ Using **ESP32 microcontrollers** paired with **AS32-TTL-100 LoRa modules**, the 
 
 The firmware is modular and structured, supporting **incremental testing** from GPIO/UART sanity checks to full production-ready emergency node firmware.
 
----
 
 ## Key Features
 - **Wireless Communication:** 433MHz LoRa spread spectrum with up to 3 km range (line of sight).  
@@ -21,7 +19,6 @@ The firmware is modular and structured, supporting **incremental testing** from 
 - **Data Security:** Built-in encryption support for sensitive data.  
 - **Modular Firmware:** Structured code plan enabling step-by-step testing and integration.
 
----
 
 ## Hardware Requirements
 - **ESP32 NodeMCU Development Board (CH340)**  
@@ -29,20 +26,6 @@ The firmware is modular and structured, supporting **incremental testing** from 
 - **Optional Sensors:** water level, rainfall, or environmental monitoring  
 - **Power Supply:** 3.3–5.5 VDC  
 
-### Standard Pinout
-| ESP32 Pin | AS32 Pin | Function |
-|-----------|----------|---------|
-| D17       | RXD      | LoRa RX (ESP32 → AS32) |
-| D16       | TXD      | LoRa TX (AS32 → ESP32) |
-| D25       | MD0      | Mode select pin 0 |
-| D26       | MD1      | Mode select pin 1 |
-| D27       | AUX      | Module status indication |
-| 3V3       | VCC      | Power supply |
-| GND       | GND      | Ground |
-
-> **Note:** All code versions use this pinout for consistency across modules.
-
----
 
 ## Firmware Code Plan
 1. **Code 1.0:** ESP32 GPIO & UART Sanity Test  
@@ -59,9 +42,6 @@ The firmware is modular and structured, supporting **incremental testing** from 
 12. **Code 1.4.1:** Backend Upload  
 13. **Code 1.5:** Production Firmware
 
-> **Important:** Ensure **shared configuration (Code 1.3.3)** is finalized before moving to Codes 1.4 and above.
-
----
 
 ## AS32-TTL-100 Shared Configuration
 - **Module Address:** `ADDH = 0x00`, `ADDL = 0x00`  
@@ -69,7 +49,6 @@ The firmware is modular and structured, supporting **incremental testing** from 
 - **Channel:** `CHAN = 0x17` (433 MHz)  
 - **Operation Mode & Options:** `OPTION = 0x40` (transparent, push-pull, 250 ms wake, max TX power)  
 
----
 
 ## Project Features & Capabilities
 - Transparent broadcasting and monitoring  
@@ -79,7 +58,6 @@ The firmware is modular and structured, supporting **incremental testing** from 
 - Configurable retransmission delays and TTL  
 - Real-time RSSI and link quality monitoring  
 
----
 
 ## Getting Started
 1. **Clone the Repository**
